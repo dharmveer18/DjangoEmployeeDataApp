@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'Employee',
-    'drf_rw_serializers'
+    'account'
 ]
 
 MIDDLEWARE = [
@@ -69,6 +69,9 @@ TEMPLATES = [
         },
     },
 ]
+
+
+AUTH_USER_MODEL = 'account.Account'
 
 WSGI_APPLICATION = 'Assignment.wsgi.application'
 
